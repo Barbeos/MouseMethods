@@ -7,6 +7,7 @@ public class Rotate : MonoBehaviour
 	Transform target;
 
 	//the target object
+    public float speed;
 	private float speedMod = 10.0f;
 	private Vector3 point;
 	Vector3 mousePos;
@@ -34,14 +35,6 @@ public class Rotate : MonoBehaviour
 			
 		}
 
-		if (Input.GetMouseButtonDown(1)) {
-			mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
-		}
-
-		if (Input.GetMouseButton (1)) {
-			Camera.main.transform.position = (Camera.main.ScreenToWorldPoint (Input.mousePosition) - mousePos);
-
-		}
-	}
+    }
 }
